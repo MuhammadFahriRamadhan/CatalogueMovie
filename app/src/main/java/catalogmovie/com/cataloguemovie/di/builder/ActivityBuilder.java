@@ -1,8 +1,8 @@
 package catalogmovie.com.cataloguemovie.di.builder;
 
 
-import catalogmovie.com.cataloguemovie.ui.MainActivity;
-import catalogmovie.com.cataloguemovie.ui.MainModule;
+import catalogmovie.com.cataloguemovie.ui.Main.MainActivity;
+import catalogmovie.com.cataloguemovie.ui.Main.MainModule;
 
 import catalogmovie.com.cataloguemovie.ui.detail.DetailMovieActivity;
 import catalogmovie.com.cataloguemovie.ui.detail.DetailMovieActivityModule;

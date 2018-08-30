@@ -1,15 +1,12 @@
-package catalogmovie.com.cataloguemovie.ui;
+package catalogmovie.com.cataloguemovie.ui.Main;
 
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Handler;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.util.Log;
 import android.widget.Toast;
@@ -81,20 +78,20 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
     @Override
     public void search() {
         String inputSearh = mActivitymainbinding.edtcari.getText().toString();
-        Log.i(TAG, "search: "+inputSearh);
+
         if (!inputSearh.equals("") && isNetworkConnected()){
-            Log.i(TAG, "masuk sini: ");
+
             mMainViewModel.doSearchMovieList(inputSearh);
         }else if (inputSearh.equals("")){
-            Toast.makeText(this, "Maaf, Masih kosong inputannya", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Inputan Tidak Boleh Kosong", Toast.LENGTH_SHORT).show();
         }else {
-            Toast.makeText(this, "Maaf, harap cek koneksi", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Harap Cek Koneksi Anda", Toast.LENGTH_SHORT).show();
         }
     }
 
     @Override
     public void nullData() {
-        Toast.makeText(this, "Maaf, kata kunci tidak ditemukan", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Kata Kunci Tidak Ditemukan", Toast.LENGTH_SHORT).show();
     }
     private void setUp() {
         mActivitymainbinding.listmovie.setHasFixedSize(true);

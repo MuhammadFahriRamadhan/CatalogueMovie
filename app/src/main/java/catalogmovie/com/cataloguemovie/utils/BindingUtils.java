@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import catalogmovie.com.cataloguemovie.data.model.Movie;
 import catalogmovie.com.cataloguemovie.ui.ItemMovieSearch.MovieSearchAdapter;
 
-/**
- * Created by irmansyah on 23/02/18.
- */
 
 public class BindingUtils {
 
@@ -24,7 +21,7 @@ public class BindingUtils {
             Picasso.with(imageView.getContext()).load(url).into(imageView);
         }
     }
-//
+
     @BindingAdapter({"movieSearchAdapter"})
     public static void addMovieSearchAdapter(RecyclerView recyclerView,
                                      ArrayList<Movie> movies) {
@@ -34,34 +31,5 @@ public class BindingUtils {
             adapter.addItems(movies);
         }
     }
-//
-//    @BindingAdapter({"movieNowPlayingAdapter"})
-//    public static void addMovieNowPlayingAdapter(RecyclerView recyclerView,
-//                                       ArrayList<Movie> movies) {
-//        NowPlayingAdapter adapter = (NowPlayingAdapter) recyclerView.getAdapter();
-//        if(adapter != null) {
-//            adapter.clearItems();
-//            adapter.addItems(movies);
-//        }
-//    }
-//
-//    @BindingAdapter({"movieUpcomingAdapter"})
-//    public static void addMovieUpcomingAdapter(RecyclerView recyclerView,
-//                                                 ArrayList<Movie> movies) {
-//        UpcomingAdapter adapter = (UpcomingAdapter) recyclerView.getAdapter();
-//        if(adapter != null) {
-//            adapter.clearItems();
-//            adapter.addItems(movies);
-//        }
-//    }
-//
-//    @BindingAdapter({"movieDbFAvouriteAdapter"})
-//    public static void addMovieDbFAvouriteAdapter(RecyclerView recyclerView,
-//                                               ArrayList<MovieDb> movieDbs) {
-//        MovieDbFavouriteAdapter adapter = (MovieDbFavouriteAdapter) recyclerView.getAdapter();
-//        if(adapter != null) {
-//            adapter.clearItems();
-//            adapter.addItems(movieDbs);
-//        }
-//    }
+
 }

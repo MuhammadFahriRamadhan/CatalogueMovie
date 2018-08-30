@@ -1,9 +1,7 @@
 package catalogmovie.com.cataloguemovie.utils;
 
 
-/**
- * Created by amitshekhar on 07/07/17.
- */
+
 
 public final class AppConstants {
 

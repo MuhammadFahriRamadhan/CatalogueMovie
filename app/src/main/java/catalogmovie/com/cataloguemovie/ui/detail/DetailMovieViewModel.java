@@ -24,8 +24,8 @@ public class DetailMovieViewModel extends BaseViewModel<DetailMovieNavigator> {
 
     public void setDataMovie(Movie result) {
         this.img.set(BuildConfig.POSTER+result.getPosterPath());
-        this.date.set("Tanggal Rilis : "+converDate(result.getReleaseDate()));
+        this.date.set("Release Date : "+converDate(result.getReleaseDate()));
         this.title.set(result.getTitle());
-        this.overview.set("Deskripsi : "+result.getOverview());
+        this.overview.set("Description : "+result.getOverview());
     }
 }

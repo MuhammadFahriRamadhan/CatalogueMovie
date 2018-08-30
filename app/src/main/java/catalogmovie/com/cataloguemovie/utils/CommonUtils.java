@@ -39,9 +39,7 @@ import java.util.regex.Pattern;
 
 import catalogmovie.com.cataloguemovie.R;
 
-/**
- * Created by amitshekhar on 07/07/17.
- */
+
 
 public final class CommonUtils {
 

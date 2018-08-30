@@ -24,9 +24,6 @@ import catalogmovie.com.cataloguemovie.data.DataManager;
 import catalogmovie.com.cataloguemovie.utils.rx.SchedulerProvider;
 import io.reactivex.disposables.CompositeDisposable;
 
-/**
- * Created by amitshekhar on 07/07/17.
- */
 
 public abstract class BaseViewModel<N> extends ViewModel {
 

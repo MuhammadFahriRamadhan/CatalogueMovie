@@ -1,4 +1,4 @@
-package catalogmovie.com.cataloguemovie.ui;
+package catalogmovie.com.cataloguemovie.ui.Main;
 
 import android.arch.lifecycle.MutableLiveData;
 import android.databinding.ObservableArrayList;
