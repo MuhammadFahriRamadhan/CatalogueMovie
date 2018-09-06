@@ -37,6 +37,9 @@ ext {
     roomDatabase = '1.0.0'
     rx2FastAndroidNetworking = '1.0.1'
 
+    //material search view
+    materialSearchView = '1.4.0'
+
     dagger2Version = '2.14.1'
     rxjava2Version = '2.1.9'
     rxandroidVersion = '2.0.2'

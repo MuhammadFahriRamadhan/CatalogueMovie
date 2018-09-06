@@ -18,6 +18,8 @@ public class CatalogueMovieApp extends Application implements HasActivityInjecto
     @Inject
     DispatchingAndroidInjector<Activity> activityDispatchingAndroidInjector;
 
+
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -26,12 +28,7 @@ public class CatalogueMovieApp extends Application implements HasActivityInjecto
                 .application(this)
                 .build()
                 .inject(this);
-//
-//        AndroidNetworking.initialize(getApplicationContext());
-//
-//        if (BuildConfig.DEBUG) {
-//            AndroidNetworking.enableLogging(HttpLoggingInterceptor.Level.BODY);
-//        }
+
 
         CalligraphyConfig.initDefault(mCalligraphyConfig);
     }

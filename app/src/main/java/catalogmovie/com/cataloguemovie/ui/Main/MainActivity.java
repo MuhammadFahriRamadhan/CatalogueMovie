@@ -38,9 +38,7 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
     @Inject
     MovieSearchAdapter mMoiewsearch;
 
-    public static Intent newIntent(Context context) {
-        return new Intent(context, MainActivity.class);
-    }
+
 
     @Override
     public int getBindingVariable() {
@@ -89,10 +87,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
         }
     }
 
-    @Override
-    public void nullData() {
-        Toast.makeText(this, "Kata Kunci Tidak Ditemukan", Toast.LENGTH_SHORT).show();
-    }
     private void setUp() {
         mActivitymainbinding.listmovie.setHasFixedSize(true);
         mActivitymainbinding.listmovie.setLayoutManager(mLinearLayoutManager);

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">KatalogFilm</string>
+    <string name="title">Judul</string>
+    <string name="release_date">Tanggal Rilis</string>
+    <string name="overview">Ulasan</string>
+    <string name="Home">MainMenu</string>
+    <string name="Search">Cari</string>
+    <string name="description">Deskripsi</string>
+    <string name="now_playing">Tayang Sekarang</string>
+    <string name="upcoming">Yang Akan Hadir</string>
+    <string name="share_image_url">Bagikan Gambar..</string>
+    <string name="navigation_drawer_open">Buka Navigasi Drawer</string>
+    <string name="navigation_drawer_close">Tutup Navigasi drawer</string>
+    <string name="detail">Detil</string>
+    <string name="share">Bagikan</string>
+    <string name="langguage">Ganti Bahasa</string>
+</resources>

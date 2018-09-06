@@ -19,14 +19,14 @@ package catalogmovie.com.cataloguemovie.data;
 import android.content.Context;
 
 
-import com.google.gson.Gson;
+
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
 import catalogmovie.com.cataloguemovie.data.model.MovieResponse;
 import catalogmovie.com.cataloguemovie.data.remote.ApiHelper;
-import io.reactivex.Observable;
+
 import io.reactivex.Single;
 
 @Singleton
@@ -41,12 +41,26 @@ public class AppDataManager implements DataManager {
         this.mAPiHelper = apiHelper;
     }
 
-
+    @Override
+    public Single<MovieResponse> getMovieUpcomingApiCall() {
+        return mAPiHelper.getMovieUpcomingApiCall();
+    }
 
     @Override
     public Single<MovieResponse> getMovieSearchApiCall(String query) {
         return mAPiHelper.getMovieSearchApiCall(query);
     }
+
+    @Override
+    public Single<MovieResponse> getMovieNowPlayingApiCall() {
+        return mAPiHelper.getMovieNowPlayingApiCall();
+    }
+
+    @Override
+    public void shareToSocialMedia(String imageUrl) {
+        mAPiHelper.shareToSocialMedia(imageUrl);
+    }
+
 
 
 }

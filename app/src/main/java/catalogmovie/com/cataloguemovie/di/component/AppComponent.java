@@ -8,7 +8,7 @@ import javax.inject.Singleton;
 import catalogmovie.com.cataloguemovie.CatalogueMovieApp;
 import catalogmovie.com.cataloguemovie.di.builder.ActivityBuilder;
 import catalogmovie.com.cataloguemovie.di.module.AppModule;
-import catalogmovie.com.cataloguemovie.di.scope.CatalogMovieScope;
+
 import dagger.BindsInstance;
 import dagger.Component;
 import dagger.android.AndroidInjectionModule;

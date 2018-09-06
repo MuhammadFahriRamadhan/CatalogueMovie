@@ -15,7 +15,7 @@ import catalogmovie.com.cataloguemovie.data.AppDataManager;
 import catalogmovie.com.cataloguemovie.data.DataManager;
 import catalogmovie.com.cataloguemovie.data.remote.ApiHelper;
 import catalogmovie.com.cataloguemovie.data.remote.AppApiHelper;
-import catalogmovie.com.cataloguemovie.di.scope.CatalogMovieScope;
+
 import catalogmovie.com.cataloguemovie.utils.rx.AppSchedulerProvider;
 import catalogmovie.com.cataloguemovie.utils.rx.SchedulerProvider;
 import dagger.Module;
@@ -56,48 +56,6 @@ public class AppModule {
     }
 
 
-//    @Provides
-//    @DatabaseInfo
-//    String provideDatabaseName() {
-//        return AppConstants.DB_NAME;
-//    }
-//
-//    @Provides
-//    @CatalogMovieScope
-//    SchedulerProvider provideSchedulerProvider() {
-//        return new AppSchedulerProvider();
-//    }
-//
-//    @Provides
-//    @CatalogMovieScope
-//    DataManager provideDataManager(AppDataManager appDataManager) {
-//        return appDataManager;
-//    }
-//
-//    @Provides
-//    @CatalogMovieScope
-//    ApiHelper provideApiHelper(AppApiHelper appApiHelper) {
-//        return appApiHelper;
-//    }
-//
-//    @Provides
-//    @CatalogMovieScope
-//    MovieDatabase provideMovieDatabase(Context context, @DatabaseInfo String dbName) {
-//        return Room.databaseBuilder(context, MovieDatabase.class, dbName).fallbackToDestructiveMigration()
-//                .build();
-//    }
-//
-//    @Provides
-//    @CatalogMovieScope
-//    DbHelper provideDbHelper(AppDbHelper appDbHelper) {
-//        return appDbHelper;
-//    }
-
-//    @Provides
-//    @CatalogMovieScope
-//    MovieDbContentProvider provideMovieDbContentProvider(MovieDatabase movieDatabase) {
-//        return new MovieDbContentProvider(movieDatabase);
-//    }
 
     @Provides
     @Singleton

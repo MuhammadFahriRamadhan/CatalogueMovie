@@ -62,59 +62,7 @@ public final class CommonUtils {
         return progressDialog;
     }
 
-    @SuppressLint("all")
-    public static String getDeviceId(Context context) {
-        return Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
-    }
 
-    public static boolean isEmailValid(String email) {
-        Pattern pattern;
-        Matcher matcher;
-        final String EMAIL_PATTERN =
-                "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-        pattern = Pattern.compile(EMAIL_PATTERN);
-        matcher = pattern.matcher(email);
-        return matcher.matches();
-    }
-
-    public static String loadJSONFromAsset(Context context, String jsonFileName)
-            throws IOException {
-
-        AssetManager manager = context.getAssets();
-        InputStream is = manager.open(jsonFileName);
-
-        int size = is.available();
-        byte[] buffer = new byte[size];
-        is.read(buffer);
-        is.close();
-
-        return new String(buffer, "UTF-8");
-    }
-
-    public static int calculateNoOfGridColumns(Context context) {
-        DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
-        float dpWidth = displayMetrics.widthPixels / displayMetrics.density;
-        int noOfColumns = (int) (dpWidth / 180);
-        return noOfColumns;
-    }
-
-    public static String getTimeStamp() {
-        return new SimpleDateFormat(AppConstants.TIMESTAMP_FORMAT, Locale.US).format(new Date());
-    }
-
-
-    public static String cutText(String overview){
-        String deskripsi;
-        if (overview.length() < 30){
-            deskripsi = overview;
-        }else{
-            String text = overview.substring(0, 30);
-            String text2 = overview.substring(31);
-            String titik2 = text2.replace(text2, "...");
-            deskripsi = text+titik2;
-        }
-        return deskripsi;
-    }
 
     public static String converDate(String date){
 

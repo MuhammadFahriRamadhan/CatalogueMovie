@@ -3,4 +3,17 @@
     <string name="title">title</string>
     <string name="release_date">release date</string>
     <string name="overview">Overview</string>
+    <string name="Home">home</string>
+    <string name="Search">Search</string>
+    <string name="description">Description</string>
+    <string name="now_playing">Now playing</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="share_image_url">Image Shared..</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="detail">detail</string>
+    <string name="share">share</string>
+    <string name="creator">Muhammad Fahri Ramdhan</string>
+    <string name="alamat_email">fahriramadh4n@gmail.com</string>
+    <string name="langguage">Change Language Settings</string>
 </resources>

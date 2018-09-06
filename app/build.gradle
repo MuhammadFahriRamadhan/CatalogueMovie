@@ -13,10 +13,12 @@ android {
     buildTypes {
 
         debug {
-            buildConfigField("String", "API_KEY", "\"b607c4a709f1c7b173cdf2e63c87eb90\"")
+            buildConfigField("String", "API_KEY", "\"2e8e301575ac531c4b5844743e854724\"")
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/\"")
             buildConfigField("String", "BASE_URL_POSTER_PATH_SMALL", "\"http://image.tmdb.org/t/p/w185/\"")
             buildConfigField("String", "POSTER", "\"http://image.tmdb.org/t/p/w185/\"")
+            buildConfigField("String", "BASE_URL_NOW_PLAYING", "\"https://api.themoviedb.org/3/movie/now_playing\"")
+            buildConfigField("String", "BASE_URL_UPCOMING", "\"https://api.themoviedb.org/3/movie/upcoming\"")
 
         }
 
@@ -24,10 +26,12 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
-            buildConfigField("String", "API_KEY", "\"b607c4a709f1c7b173cdf2e63c87eb90\"")
+            buildConfigField("String", "API_KEY", "\"2e8e301575ac531c4b5844743e854724\"")
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/search/movie\"")
             buildConfigField("String", "BASE_URL_POSTER_PATH_SMALL", "\"http://image.tmdb.org/t/p/w185/\"")
             buildConfigField("String", "POSTER", "\"http://image.tmdb.org/t/p/w185/\"")
+            buildConfigField("String", "BASE_URL_NOW_PLAYING", "\"https://api.themoviedb.org/3/movie/now_playing\"")
+            buildConfigField("String", "BASE_URL_UPCOMING", "\"https://api.themoviedb.org/3/movie/upcoming\"")
 
         }
     }
@@ -40,6 +44,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support:design:28.0.0-rc01'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
@@ -72,10 +77,13 @@ dependencies {
     //imageLoader
     implementation "com.squareup.picasso:picasso:$rootProject.picassoVersion"
 
-
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
 
     // font
     implementation "uk.co.chrisjenx:calligraphy:$rootProject.calligraphyVersion"
+
+    //search view
+    implementation "com.miguelcatalan:materialsearchview:$rootProject.materialSearchView"
 
     // parser
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"

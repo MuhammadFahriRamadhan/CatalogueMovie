@@ -7,7 +7,6 @@ public interface MainNavigator {
     void search();
 
 
-    void nullData();
 
 
     void failedLoadApi();
